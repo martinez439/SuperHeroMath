@@ -1,6 +1,24 @@
+body {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgrey;
+}
 .button {
 position: absolute;
-top: 30;
+top: 10%;
+left: 10%;
+transform: translate(-50%,-50%);
+  background-color: #08FCEC;
+  width: 10%;
+  border: 1px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 15px 28px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 40px 15px 176px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0      rgba(0,0,0,0.2), 0 6px 20px 0            rgba(0,0,0,0.19); 
 }
 
 .msgBox {
@@ -10,9 +28,15 @@ top: 30;
     transform: translate(-50%,-50%);
     width: 500px;
     height: 400px;
-    background: rgb(51, 147, 202);
+    background: #08FCEC;
+  border: 1px solid black;
+    border-radius: 8px;
+  box-shadow: 0 8px 16px 0      rgba(0,0,0,0.2), 0 6px 20px 0            rgba(0,0,0,0.19);
+  font-family: Arial, Helvetica, sans-serif;
   }
   .msgBox p {
+    font-style: Arial;
+    font-size: 1.2rem;
     line-height: 1.5;
     padding: 10px 20px;
     text-align: center;
@@ -27,14 +51,30 @@ top: 30;
   }
 
   .msgBox input {
-    width: 50%;
+    width: 30%;
     padding: 12px 20px;
-    margin: 8px 0 0 125px;
+    margin: 4px 39px 5px 165px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
   }
+  
+ .msgBox submit {
+  background-color: white;
+  width: 10%;
+  border-radius: 8px;
+  border: 1px solid black;
+  color: black;
+  padding: 15px 28px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 40px 15px 176px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0      rgba(0,0,0,0.2), 0 6px 20px 0            rgba(0,0,0,0.19); 
+  }
+  
+
   .msgBox button {
     background: none;
     border: none;
@@ -44,6 +84,5 @@ top: 30;
     font-size: 1.1rem;
     color: rgb(255, 249, 249);
   }
-  
 
 
