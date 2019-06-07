@@ -1,4 +1,3 @@
-
 var firstNumber = Math.floor(Math.random() * 15) +1;
 var secondNumber = Math.floor(Math.random() * 10) +1;
 var finalAnswer = firstNumber + secondNumber;
@@ -24,9 +23,13 @@ function displayMessage(msgText, msgType) {
     panel.appendChild(newContent);  
 
     var guessBox = document.createElement('input');
-    guessBox.setAttribute("type", "text");
-    guessBox.setAttribute("value", "Hello World!");
+    guessBox.setAttribute("value", "Answer here");
     panel.appendChild(guessBox);
+  
+    var submitBtn = document.createElement('submit');
+    submitBtn.setAttribute("name", "SUBMIT");
+    submitBtn.textContent = 'SUBMIT';
+    panel.appendChild(submitBtn);
 
     var closeBtn = document.createElement('button');
     closeBtn.textContent = 'x';
