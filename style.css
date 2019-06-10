@@ -1,88 +1,70 @@
 body {
-  
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: lightgrey;
-}
-.button {
-position: absolute;
-top: 10%;
-left: 10%;
-transform: translate(-50%,-50%);
-  background-color: #08FCEC;
-  width: 10%;
-  border: 1px solid black;
-  border-radius: 8px;
-  color: black;
-  padding: 15px 28px;
-  display: inline-block;
-  font-size: 16px;
-  margin: 25px 40px 15px 176px;
-  cursor: pointer;
-  box-shadow: 0 8px 16px 0      rgba(0,0,0,0.2), 0 6px 20px 0            rgba(0,0,0,0.19); 
+ 
+background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-.msgBox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 500px;
-    height: 400px;
-    background: #08FCEC;
-  border: 1px solid black;
-    border-radius: 8px;
-  box-shadow: 0 8px 16px 0      rgba(0,0,0,0.2), 0 6px 20px 0            rgba(0,0,0,0.19);
-  font-family: Arial, Helvetica, sans-serif;
-  }
-  .msgBox p {
-    font-style: Arial;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    padding: 10px 20px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-  }
+  .circle {
+  margin: auto;
+  background-color: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 350;
+  font-size: 1.2rem;
+  text-align: center;
+  border:2px solid white;
+	border-radius: 50%;
+  padding: 25px;
+	width: 120px;
+	height: 120px; 
+	/* width and height can be anything, as long as they're equal */
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
+}
+    
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 
-  .msgBox h1 {
-    line-height: 1.5;
-    padding: 10px 20px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-  }
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 
-  .msgBox input {
-    width: 30%;
-    padding: 12px 20px;
-    margin: 4px 39px 5px 165px;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
- .msgBox submit {
-  background-color: white;
-  width: 10%;
-  border-radius: 8px;
-  border: 1px solid black;
-  color: black;
-  padding: 15px 28px;
-  display: inline-block;
-  font-size: 16px;
-  margin: 25px 40px 15px 176px;
-  cursor: pointer;
-  box-shadow: 0 8px 16px 0      rgba(0,0,0,0.2), 0 6px 20px 0            rgba(0,0,0,0.19); 
-  }
-  
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 
-  .msgBox button {
-    background: none;
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 1.1rem;
-    color: rgb(255, 249, 249);
-  }
+.btn2 {
+    font-size: 2rem;
+    box-shadow: 1px 1px 1px 1px rgb(68, 68, 68);
 
-
+}
